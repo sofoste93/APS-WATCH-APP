@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/headerLogo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/aps_logo_top" />
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_light"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <com.sofoste.aps_watch_app.AnalogClockView
+        android:id="@+id/analogClockView"
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_centerInParent="true"
+        android:background="@color/cardview_dark_background"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/watchTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analogClockView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/green"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/_00_00_00_am_gmt"
+        android:textSize="25sp" />
+
+    <!-- Central Africa Time Button -->
+    <Button
+        android:id="@+id/localTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="605dp"
+        android:text="@string/local_time" />
+
+    <!-- Theme Button -->
+
+    <!-- Alarm Setting Button -->
+    <Button
+        android:id="@+id/africaTimeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="607dp"
+
+        android:text="@string/yaounde_time" />
+
+    <!-- Footer -->
+
+    <Button
+        android:id="@+id/themeButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/watchTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="58dp"
+        android:background="@color/black"
+        android:text="@string/switch_theme"
+        android:textColor="@color/yellow" />
+
+    <Button
+        android:id="@+id/alarmSettingButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/watchTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/set_alarm" />
+
+    <LinearLayout
+        android:id="@+id/footerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-1dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/footerLogo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/aps_logo"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/footerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/sofoste_2023"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

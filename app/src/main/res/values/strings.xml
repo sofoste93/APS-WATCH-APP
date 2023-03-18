@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">aps-watch-app</string>
+    <string name="switch_theme">Switch Theme</string>
+    <string name="sofoste_2023">© Sofoste 2023</string>
+    <string name="yaounde_time">Yaounde Time</string>
+    <string name="local_time">Local Time</string>
+    <string name="_00_00_00_am_gmt">00:00:00 AM GMT</string>
+    <string name="aps_watch_app">APS WATCH APP</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="activity_alarm_setting">Alarm Setting</string>
+    <string name="back_button_description">Back to main view</string>
+    <string name="aps_logo">APS LOGO</string>
+    <string name="aps_logo_top">APS LOGO</string>
+</resources>

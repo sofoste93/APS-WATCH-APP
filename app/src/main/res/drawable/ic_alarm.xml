@@ -1,0 +1,60 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512"
+    tools:ignore="VectorRaster">
+
+    <!-- Clock body -->
+    <path
+        android:pathData="M256,110a146,146 0,1 1,-146 146,146,146 0,1 1,146 -146"
+        android:strokeWidth="10"
+        android:strokeColor="#000000"
+        android:fillColor="#00000000"/>
+
+    <!-- Hour hand -->
+    <path
+        android:pathData="M256,256 L256,146"
+        android:strokeWidth="10"
+        android:strokeColor="#000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Minute hand -->
+    <path
+        android:pathData="M256,256 L366,256"
+        android:strokeWidth="10"
+        android:strokeColor="#000000"
+        android:strokeLineCap="round"/>
+
+    <!-- Clock center -->
+    <path
+        android:pathData="M256,251a5,5 0,1 1,-5 5,5,5 0,1 1,5 -5"
+        android:fillColor="#000000"/>
+
+    <!-- Left bell -->
+    <path
+        android:pathData="M146,190 Q76,256 146,322"
+        android:strokeWidth="10"
+        android:strokeColor="#000000"/>
+
+    <!-- Right bell -->
+    <path
+        android:pathData="M366,190 Q436,256 366,322"
+        android:strokeWidth="10"
+        android:strokeColor="#0000C0"/>
+
+    <!-- Left leg -->
+    <path
+        android:pathData="M166,322 L146,382"
+        android:strokeWidth="10"
+        android:strokeColor="#FC5AE0"
+        android:strokeLineCap="round"/>
+
+    <!-- Right leg -->
+    <path
+        android:pathData="M346,322 L366,382"
+        android:strokeWidth="10"
+        android:strokeColor="#000000"
+        android:strokeLineCap="round"/>
+</vector>
